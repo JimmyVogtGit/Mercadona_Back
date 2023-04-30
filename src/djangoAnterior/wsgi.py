@@ -11,7 +11,7 @@ import os
 import sys
 
 from django.core.wsgi import get_wsgi_application
-
+#add path
 sys.path.append('/home/jimbigood/Documents/projects/studi/Django/django_with_postgresql_9622/Back/src')
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djangoAnterior.settings')
