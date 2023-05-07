@@ -53,7 +53,6 @@ def create_product(request):
         # image = data.get('image')
         category_id = data.get('category')
         promotion_id = data.get('promotion')
-
         category = Category.objects.get(pk=category_id)
         promotion = Promotion.objects.get(pk=promotion_id) if promotion_id else None
 
