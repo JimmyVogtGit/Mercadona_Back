@@ -31,4 +31,3 @@ class CustomUser(AbstractBaseUser):
 
     def __str__(self):
         return self.email
-# Create your models here.

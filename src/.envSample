@@ -1,6 +1,7 @@
-SECRET_KEY=
+SECRET_KEY=<mettre_la_clé>
 DB_NAME=
 DB_USER=
 DB_PASSWORD=
 HOST=
 PORT=
+DEBUG=
