@@ -27,7 +27,7 @@ class Produit(models.Model):
     promotion = models.ForeignKey(Promotion, on_delete=models.SET_NULL, null=True, blank=True)
 
     def __str__(self):
-        return self.libelle
+        return self.wording
 
     def price_promotion(self):
         if self.promotion:

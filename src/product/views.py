@@ -71,6 +71,20 @@ def create_product(request):
     else:
         return JsonResponse({'status': 'error', 'message': 'Invalid request method'})
 
+def product_list(request):
+    products = Produit.objects.select_related('category', 'promotion')
+    products_list = []
+    for product in products:
+        products_list.append({
+            'id':product.id,
+            'wording':product.wording,
+            "describe":product.describe,
+            "price": product.price,
+            "category":product.category.name,
+            "image": product.image if product.image else None,
+        })
+    return JsonResponse(products_list, safe=False)
+
 
 @csrf_exempt
 def create_category(request):
