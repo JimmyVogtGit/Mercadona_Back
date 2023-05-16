@@ -11,9 +11,9 @@ public_html_dir = os.path.abspath(os.path.join(current_dir, '../../../../public_
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
     path('', include('authenticate.urls')),
     path('', include('product.urls')),
+    path('', views.index),
     re_path(r'^.*$', serve, {'document_root': public_html_dir})
 
 ]
