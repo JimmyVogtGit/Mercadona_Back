@@ -24,6 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Allowed cors
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
+    'http://test.hmlp4502.odns.fr/'
 
 ]
 CORS_ORIGIN_ALLOW_ALL = True
