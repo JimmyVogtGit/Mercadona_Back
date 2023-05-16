@@ -151,6 +151,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+current_dir = os.path.abspath(os.path.dirname(__file__))
+print(current_dir)
+
+public_html_dir = os.path.abspath(os.path.join(current_dir, '../../../../public_html'))
+print(public_html_dir)
+
+STATIC_ROOT = public_html_dir
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
