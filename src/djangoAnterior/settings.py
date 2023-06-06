@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Allowed cors
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
-    'http://test.hmlp4502.odns.fr/'
+    'http://test.hmlp4502.odns.fr'
 
 ]
 CORS_ORIGIN_ALLOW_ALL = True
@@ -38,7 +38,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [os.getenv("CORS_ALLOWED")]
 
 # Application definition
 
