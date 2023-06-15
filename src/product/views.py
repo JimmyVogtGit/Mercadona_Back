@@ -80,7 +80,8 @@ def product_list(request):
         for promotion in product.promotion_set.all():
             promotions.append({
                 'id': promotion.id,
-                'percentage': promotion.percentage
+                'percentage': promotion.percentage,
+                'startDate': promotion.startDate
             })
         products_list.append({
             'id': product.id,
